@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <link rel="stylesheet" href="../style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../js/script.js"></script>
+        <script src="../js/joy.js"></script>
+    </head>
+    <body>
+        <div style="position: fixed; top: 1%; bottom: 1%;">
+            <a href="../index.html">
+                <img src="../src/back.svg" width="15%">
+            </a>
+        </div>
+        <div class="joy-info">
+                <input id="joy2PosizioneX" type="text" hidden/></br>
+				<input id="joy2PosizioneY" type="text" hidden/></br>
+				<input id="joy2Direzione" type="text" hidden/></br>
+				X :<input id="joy2X" type="text" /></br>
+				Y :<input id="joy2Y" type="text" />
+            <div id="history"></div>
+        </div>
+        <div class="container">
+            
+            <div class="video-box">
+                <p class="for-align-middle" align="middle">
+                    <iframe
+                        autoplay;
+                        id="ytplayer"
+                        type="text/html"
+                        width="1080"
+                        src="https://www.youtube.com/embed/_stX5qaJl_4"
+                        frameborder="0"
+                        allowfullscreen=""
+                    ></iframe>
+                </p>
+                <div id="joy2Div" style="touch-action: none;"><canvas id="joystick2" width="100" height="100"></canvas></div>
+            </div>
+        </div>
+        
+        <!-- Joystick -->
+        <script type="text/javascript">
+            var joy2Param = { "title": "joystick2", "autoReturnToCenter": false };
+            var Joy2 = new JoyStick('joy2Div', joy2Param);
+
+            var joy2IinputPosX = document.getElementById("joy2PosizioneX");
+            var joy2InputPosY = document.getElementById("joy2PosizioneY");
+            var joy2Direzione = document.getElementById("joy2Direzione");
+            var joy2X = document.getElementById("joy2X");
+            var joy2Y = document.getElementById("joy2Y");
+
+            setInterval(function(){ joy2IinputPosX.value=Joy2.GetPosX(); }, 50);
+            setInterval(function(){ joy2InputPosY.value=Joy2.GetPosY(); }, 50);
+            setInterval(function(){ joy2Direzione.value=Joy2.GetDir(); }, 50);
+            setInterval(function(){ joy2X.value=Joy2.GetX(); }, 50);
+            setInterval(function(){ joy2Y.value=Joy2.GetY(); }, 50);
+        </script>
+    </body>
+</html>
