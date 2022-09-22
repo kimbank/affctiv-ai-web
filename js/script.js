@@ -19,8 +19,8 @@ console.log(AFFCTIV_AI)
 console.log("Check Out -> " + LAB_URL)
 console.log("2022. Laboratory Intern. Team A(In)")
 
-document.write("<pre align='center'>" + AFFCTIV_AI + (DEBUG_MODE ? "-- Debug Mode --" : "") +"</pre>");
-document.write("<pre align='center'>" + "Check Out -> " + 
+document.write("<pre id='a1' align='center'>" + AFFCTIV_AI + (DEBUG_MODE ? "-- Debug Mode --" : "") +"</pre>");
+document.write("<pre id='a2' align='center'>" + "Check Out -> " + 
                 "<a href='https://affctiv.ai/'>" + LAB_URL + "</a>" + 
                 "</pre>");
-document.write("<pre align='center'>" + "2022. Laboratory Intern. Team A(In)" + "</pre>");
+document.write("<pre id='a3' align='center'>" + "2022. Laboratory Intern. Team A(In)" + "</pre>");
