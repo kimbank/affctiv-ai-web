@@ -9,24 +9,25 @@
         <script type="text/javascript">
             $( document ).ready( function() {
                 var jbTime = 600;
-                $( '#1' ).animate( {
+                $( '#a1' ).animate( {
                 opacity: '1'
                 }, jbTime, function() {
-                $( '#2' ).animate( {
+                $( '#a2' ).animate( {
                     opacity: '1'
                 }, jbTime, function() {
-                    $( '#3' ).animate( {
+                    $( '#a3' ).animate( {
                     opacity: '1'
                 }, jbTime, function() {
-                $( '#4' ).animate( {
+                $( '#a4' ).animate( {
                     opacity: '1'
                 }, jbTime, function() {
-                $( '#5' ).animate( {
+                $( '#a5' ).animate( {
+                    opacity: '1'
+                }, jbTime, function() {
+                $( '#a6' ).animate( {
                     opacity: '1'
                 }, jbTime );
-                $( '#6' ).animate( {
-                    opacity: '1'
-                }, jbTime );
+                } );
                 } );
                 } );
                 } );
@@ -35,12 +36,12 @@
         </script>
     </head>
     <body>
-        <div style="position: fixed; top: 1%; bottom: 1%;">
+        <div id="a6" style="position: fixed; top: 1%; bottom: 1%;">
             <a href="../index.html">
                 <img src="../src/back.svg" width="15%">
             </a>
         </div>
-        <div class="joy-info">
+        <div id="a5" class="joy-info">
                 <input id="joy2PosizioneX" type="text" hidden/></br>
 				<input id="joy2PosizioneY" type="text" hidden/></br>
 				<input id="joy2Direzione" type="text" hidden/></br>
@@ -48,8 +49,7 @@
 				Y :<input id="joy2Y" type="text" />
             <div id="history"></div>
         </div>
-        <div class="container">
-            
+        <div id="a4" class="container">
             <div class="video-box">
                 <p class="for-align-middle" align="middle">
                     <iframe
