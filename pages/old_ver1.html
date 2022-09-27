@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <link rel="stylesheet" href="../style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/script.js"></script>
+        <script src="../js/joy.js"></script>
+        <script type="text/javascript">
+            $( document ).ready( function() {
+                var jbTime = 300;
+                $( '#a1' ).animate( {
+                opacity: '1'
+                }, jbTime, function() {
+                $( '#a2' ).animate( {
+                    opacity: '1'
+                }, jbTime, function() {
+                    $( '#a3' ).animate( {
+                    opacity: '1'
+                }, jbTime, function() {
+                $( '#a4' ).animate( {
+                    opacity: '1'
+                }, jbTime, function() {
+                $( '#a5' ).animate( {
+                    opacity: '1'
+                }, jbTime, function() {
+                $( '#a6' ).animate( {
+                    opacity: '1'
+                }, jbTime );
+                } );
+                } );
+                } );
+                } );
+                } );
+            } );
+        </script>
+    </head>
+    <body>
+        <div id="a6" style="position: fixed; top: 1%; bottom: 1%;">
+            <a href="../index.html">
+                <img src="../src/back.svg" width="15%">
+            </a>
+        </div>
+        <div id="a5" class="joy-info">
+                <input id="joy3PosizioneX" type="text" hidden/><br />
+                <input id="joy3PosizioneY" type="text" hidden/><br />
+                <input id="joy3Direzione" type="text" hidden/><br />
+                X :<input id="joy3X" type="text" /></br>
+                Y :<input id="joy3Y" type="text" />
+            <div id="history"></div>
+        </div>
+        <div id="a4" class="container">
+            <div class="video-box">
+                <p class="for-align-middle" align="middle">
+                    <iframe
+                        autoplay;
+                        id="ytplayer"
+                        type="text/html"
+                        width="1080"
+                        src="https://www.youtube.com/embed/_stX5qaJl_4"
+                        frameborder="0"
+                        allowfullscreen=""
+                    ></iframe>
+                </p>
+                <div id="joy3Div" style="width:200px;height:200px;margin:50px;position:fixed;bottom:0%;right:0%;"></div>
+            </div>
+        </div>
+        
+        <!-- Joystick -->
+        <script type="text/javascript">
+            var joy3Param = { "title": "joystick3" };
+            var Joy3 = new JoyStick('joy3Div', joy3Param);
+            
+            var joy3IinputPosX = document.getElementById("joy3PosizioneX");
+            var joy3InputPosY = document.getElementById("joy3PosizioneY");
+            var joy3Direzione = document.getElementById("joy3Direzione");
+            var joy3X = document.getElementById("joy3X");
+            var joy3Y = document.getElementById("joy3Y");
+            
+            setInterval(function(){ joy3IinputPosX.value=Joy3.GetPosX(); }, 50);
+            setInterval(function(){ joy3InputPosY.value=Joy3.GetPosY(); }, 50);
+            setInterval(function(){ joy3Direzione.value=Joy3.GetDir(); }, 50);
+            setInterval(function(){ joy3X.value=Joy3.GetX(); }, 50);
+            setInterval(function(){ joy3Y.value=Joy3.GetY(); }, 50);
+        </script>
+    </body>
+</html>
