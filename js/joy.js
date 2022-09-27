@@ -136,6 +136,15 @@ var JoyStick = function (container, parameters, callback) {
     var movedX = centerX;
     var movedY = centerY;
 
+    // Bank
+    var imgSrc = "../src/joy_bg.png";    		
+    var img = new Image();
+    img.onload = function(){
+        context.drawImage(img, 0, 0, width, height);
+    }
+    img.src = imgSrc;
+    ///////
+
     // Check if the device support the touch or not
     if ("ontouchstart" in document.documentElement) {
         canvas.addEventListener("touchstart", onTouchStart, false);
@@ -169,6 +178,7 @@ var JoyStick = function (container, parameters, callback) {
      * @desc Draw the internal stick in the current position the user have moved it
      */
     function drawInternal() {
+        context.drawImage(img, 0, 0, width, height);
         context.beginPath();
         if (movedX < internalRadius) {
             movedX = maxMoveStick;

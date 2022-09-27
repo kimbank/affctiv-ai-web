@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport">
-    <title>joystick - 1</title>
+    <title>tjoystick - 2</title>
     <link rel="stylesheet" href="../style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/test.js"></script>
@@ -19,11 +19,6 @@
             -ms-user-select:none;
             user-select:none;
         }
-
-        #joy-con {
-            z-index: 7;
-        }
-
         canvas {
             z-index: 10;
 
@@ -34,7 +29,11 @@
 </head>
 
 <body>
-    <div id="joy1Div" style="width:200px;height:200px;margin:50px"></div>
+    <!-- <div id="joy2Div"></div> -->
+    <div id="joy2Div" style="touch-action: none;">
+        <canvas id="joystick2"></canvas>
+    </div>
+
     <div id="player"></div>
 
     <script>
@@ -70,7 +69,8 @@
 
     <!-- Joystick -->
     <script type="text/javascript">
-        var Joy1 = new JoyStick('joy1Div', {});
+        var joy2Param = { "autoReturnToCenter": false };
+        var Joy2 = new JoyStick('joy2Div', joy2Param);
     </script>
 </body>
 
