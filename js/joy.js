@@ -317,22 +317,14 @@ var JoyStick = function (container, parameters, callback) {
         var yy = movedY - 100;
 
             // log
-        console.log(
-            sec + "s," +
-            ms + "ms " +
-            xx + "," +
-            yy
-        );
-        //  var history = document.getElementById('history');
-        //  var p = document.createElement('p');
-        //  var tme = document.createTextNode(arr);
-        //  var space = document.createTextNode("  ");
-        //  var pos = document.createTextNode([movedX - 100, movedY - 100]);
-        //  p.appendChild(tme);
-        //  p.appendChild(space);
-        //  p.appendChild(pos);
-        //  history.appendChild(p);
-
+        if (pressed == 1) {
+            console.log(
+                sec + "s," +
+                ms + "ms " +
+                xx + "," +
+                yy
+            );
+        }
         ///////
         pressed = 0;
         // If required reset position store variable
