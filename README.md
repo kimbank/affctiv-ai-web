@@ -31,8 +31,12 @@
 <br/><br/><br/>
 
 <h1>
-  Refernces.
+  References.
 </h1>
+
+<h3>
+  Color Wheel - Joystick Background
+</h3>
 
 <img src="https://www.kindpng.com/picc/m/702-7020487_color-wheel-png-download-32-bit-color-wheel.png" alt="Color-wheel , Png Download - 32 Bit Color Wheel, Transparent Png@kindpng.com" width="300">
 
