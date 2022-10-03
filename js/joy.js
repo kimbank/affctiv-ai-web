@@ -121,6 +121,15 @@ var JoyStick = function (container, parameters, callback) {
     objContainer.appendChild(canvas);
     var context = canvas.getContext("2d");
 
+    // Bank
+    var imgSrc = "../src/joy_bg.png";    		
+    var img = new Image();
+    img.onload = function(){
+        context.drawImage(img, 0, 0, width, height);
+    }
+    img.src = imgSrc;
+    ///////
+
     var pressed = 0; // Bool - 1=Yes - 0=No
     var circumference = 4 * Math.PI;
     var internalRadius = (canvas.width - (canvas.width / 2 + 10)) / 4;
@@ -135,15 +144,6 @@ var JoyStick = function (container, parameters, callback) {
     // Used to save current position of stick
     var movedX = centerX;
     var movedY = centerY;
-
-    // Bank
-    var imgSrc = "../src/joy_bg.png";    		
-    var img = new Image();
-    img.onload = function(){
-        context.drawImage(img, 0, 0, width, height);
-    }
-    img.src = imgSrc;
-    ///////
 
     // Check if the device support the touch or not
     if ("ontouchstart" in document.documentElement) {
