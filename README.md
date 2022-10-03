@@ -27,3 +27,13 @@
 </h1>
 
 <img src="https://user-images.githubusercontent.com/87305109/192177503-3582a7f5-8408-43a8-a8d5-d35c61028225.png" width="85%"/>
+
+<br/><br/><br/>
+
+<h1>
+  Refernces.
+</h1>
+
+<img src="https://www.kindpng.com/picc/m/702-7020487_color-wheel-png-download-32-bit-color-wheel.png" alt="Color-wheel , Png Download - 32 Bit Color Wheel, Transparent Png@kindpng.com" width="300">
+
+<a href="https://www.kindpng.com/imgv/TxxJmbi_color-wheel-png-download-32-bit-color-wheel/" target="_blank">Color-wheel , Png Download - 32 Bit Color Wheel, Transparent Png @kindpng.com</a>
