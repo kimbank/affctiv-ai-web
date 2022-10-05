@@ -1,5 +1,5 @@
 <h1>
-  Web page prototype (In) </br> Emo-movie </br> Team A
+  Web page prototype </br> Emo-movie </br> Team A
 </h1>
 
 <h2>
