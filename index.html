@@ -4,15 +4,42 @@
         <meta charset="UTF-8">
         <meta name="viewport">
         <link rel="stylesheet" href="./style.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="./js/script.js"></script>
+        <script type="text/javascript">
+            $( document ).ready( function() {
+                var jbTime = 600;
+                $( '#a1' ).animate( {
+                opacity: '1'
+                }, jbTime, function() {
+                $( '#a2' ).animate( {
+                    opacity: '1'
+                }, jbTime, function() {
+                    $( '#a3' ).animate( {
+                    opacity: '1'
+                }, jbTime, function() {
+                $( '#a4' ).animate( {
+                    opacity: '1'
+                }, jbTime, function() {
+                $( '#a5' ).animate( {
+                    opacity: '1'
+                }, jbTime );
+                $( '#a6' ).animate( {
+                    opacity: '1'
+                }, jbTime );
+                } );
+                } );
+                } );
+                } );
+            } );
+        </script>
     </head>
     <body>
-        <br><br><br><hr/>
-        <table align="center" border="2">
+        <br><hr id="a5"><br><br>
+        <table id="a4" align="center" border="2">
             <tr>
                 <td align="center">ver1</td>
-                <td align="center">ver2</td>>
+                <td align="center">ver2</td>
             </tr>
             <tr>
                 <td>
@@ -27,6 +54,6 @@
                 </td>
             </tr>
         </table>
-        <br><br><br><hr>
+        <br><br><hr id="a6"><br>
     </body>
 </html>

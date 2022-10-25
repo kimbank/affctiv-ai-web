@@ -2,9 +2,9 @@ body {
     background-color: skyblue;
 }
 
-pre {
+#a1, #a2, #a3, #a4, #a5, #a6 {
     /* background-color: white; */
-    opacity: 2;
+    opacity: 0;
 }
 
 .container {
@@ -59,4 +59,8 @@ input {
 
     bottom: 10%;
     right: 10%;
+}
+
+#door {
+    opacity: 0;
 }
