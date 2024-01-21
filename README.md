@@ -3,8 +3,8 @@
 </h1>
 
 <h2>
-  <a href="https://goldbank.dev/affctiv-ai">
-    goldbank.dev/affctiv-ai
+  <a href="https://kimbank.github.io/affctiv-ai-web/">
+    https://kimbank.github.io/affctiv-ai-web
   <a>
 </h2>
 
